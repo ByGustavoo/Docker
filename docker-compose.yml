@@ -10,7 +10,7 @@ services:
       - "TZ=GMT-3" # Fuso Horário
       - "SPRING_PROFILES_ACTIVE=prod" # Perfil do Spring (dev, prod, etc.)
 
-      # Configurações do banco de dados
+      # Configurações do Banco de Dados
       - "DATABASE_IP=${DATABASE_IP}" # IP/Host do Banco
       - "DATABASE_PORT=${DATABASE_PORT}" # Porta do Banco (ex: 5432)
       - "DATABASE_NAME=${DATABASE_NAME}" # Nome do Banco
