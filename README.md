@@ -21,7 +21,7 @@
 
  <br> 
 
-🔷 `docker-compose.yml`, 
+🔷 `docker-compose.yml`, responsável por definir e configurar o serviço da aplicação, incluindo nome do container, imagem, mapeamento de portas, variáveis de ambiente (como conexão com Banco de Dados), volume para persistência de `logs` e política de reinicialização automática, garantindo padronização e facilidade na execução do ambiente.
 
 <br>
 
