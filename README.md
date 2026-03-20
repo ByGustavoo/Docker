@@ -5,7 +5,7 @@
  <br> 
  
 <div align="center">
-  Repositório com configurações de Dockerfile e Docker Compose, organizadas para facilitar o build e a execução de aplicações em contêineres.
+  Repositório com configurações de Dockerfile e Docker Compose, organizadas para facilitar o build e a execução de aplicações Spring Boot em contêineres.
 </div> 
 
  <br> 
