@@ -1,0 +1,23 @@
+services:
+  app: # Nome do Serviço (ex: googleapi)
+    container_name: "nome_container" # Nome do Container (ex: GoogleAPI)
+    image: "usuario/imagem:versao" # Imagem no Docker Hub (ex: google/app-api:1.0.0)
+
+    ports:
+      - "9027:9027" # Porta Host : Porta Container (ex: 8080:8080)
+
+    environment:
+      - "TZ=GMT-3" # Fuso Horário
+      - "SPRING_PROFILES_ACTIVE=prod" # Perfil do Spring (dev, prod, etc.)
+
+      # Configurações do banco de dados
+      - "DATABASE_IP=${DATABASE_IP}" # IP/Host do Banco
+      - "DATABASE_PORT=${DATABASE_PORT}" # Porta do Banco (ex: 5432)
+      - "DATABASE_NAME=${DATABASE_NAME}" # Nome do Banco
+      - "DATABASE_USER=${DATABASE_USER}" # Usuário do Banco
+      - "DATABASE_PASSWORD=${DATABASE_PASSWORD}" # Senha do Banco
+
+    volumes:
+      - "./logs:/app/logs" # Mapeia logs do Container para a máquina local
+
+    restart: "always" # Reinicia automaticamente se o Container parar
