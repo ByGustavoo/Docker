@@ -13,7 +13,11 @@
 
 # 🚀 Workflows 
 
-🔷 `Dockerfile`, utilizando multi-stage build, dividido em duas etapas: na primeira uma imagem com Gradle é usada para compilar a aplicação e gerar o `.jar` da aplicação, na segunda uma imagem mais leve com apenas o JRE (Java Runtime Environment, que é o ambiente necessário para executar aplicações Java), é utilizada para rodar a aplicação. Esse processo reduz o tamanho final da imagem, melhora a segurança ao não incluir dependências de build e otimiza o tempo de deploy.
+🔷 `Dockerfile`, utilizando multi-stage build, dividido em duas etapas: 
+
+* Na primeira uma imagem com Gradle é usada para compilar a aplicação e gerar o `.jar` da aplicação. 
+
+* Na segunda, é utilizada uma imagem mais leve contendo apenas o JRE (Java Runtime Environment, que é o ambiente necessário para executar aplicações Java) para rodar a aplicação. Isso reduz o tamanho final da imagem e aumenta a segurança, já que uma imagem menor possui menos vulnerabilidades, além de otimizar o tempo de deploy.
 
  <br> 
 
